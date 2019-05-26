@@ -1,0 +1,105 @@
+body {
+    background-color: #FFFFFF;
+    color: #4d4e53;
+    line-height: 1.5;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-rows: 18rem auto;
+}
+
+#nav-header {
+    text-align: center;
+    margin-top: 2%;
+}
+
+#navbar-links-container {
+    border: 2px solid #404044;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    max-height: 30vh;
+    /*Is this(above) correct??*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin: 5% 0;
+}
+
+.menu-item {
+    list-style-type: none;
+    border-bottom: 1px solid #4d4e53;
+    padding: 2.5% 0;
+}
+
+.menu-item:last-child {
+    border-bottom: unset;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4d4e53;
+    padding: 7%;
+}
+
+header {
+    color: black;
+    font-size: 1.8rem;
+}
+
+#main-doc {
+    padding: 0 4%;
+}
+
+article {
+    padding: 0 5% 5%;
+}
+
+.main-section p {
+    margin: 1em 0;
+}
+
+.main-section li {
+    margin: 1em 0;
+}
+
+.main-section ul {
+    display: block;
+    list-style-type: disc;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    padding-inline-start: 40px;
+}
+
+code {
+    display: block;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    white-space: pre;
+    overflow-x: scroll;
+    text-align: left;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    padding: 10px;
+    /* margin: 0 10px; */
+    max-width: 75vw;
+    font-family: monospace;
+    /* width: min-content; */
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-family: "Open Sans", Arial, sans-serif;
+    }
+    #grid-container {
+        grid-template-columns: 18rem auto;
+    }
+    #navbar-links-container {
+        max-height: 100vh;
+        /*Is this(above) correct??*/
+        overflow-y: auto;
+    }
+}
