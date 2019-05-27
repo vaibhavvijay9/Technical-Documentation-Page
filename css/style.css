@@ -63,6 +63,10 @@ article {
     margin: 1em 0;
 }
 
+.list-sub-item {
+    list-style-type: circle;
+}
+
 .main-section ul {
     display: block;
     list-style-type: disc;
